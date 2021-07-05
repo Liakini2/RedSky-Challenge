@@ -1,0 +1,26 @@
+.create-user-parent{
+    background-color: #6CA6C1;
+    color: #343434;
+}
+
+.create-user-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+.create-user-text{
+    font-size: large;
+    margin: 0.25vw;
+}
+
+.create-input{
+    height: 30px;
+    margin: 0.15vw;
+}
+
+.create-btn:hover{
+    background-color: #2F3061;
+}

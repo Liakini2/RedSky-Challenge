@@ -1,0 +1,26 @@
+.user-list-parent{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-list-display{
+    margin: 0.5vw;
+    padding: 0.5vw;
+    background-color: #2F3061;
+    width: 22vw;
+    height: 60vh;
+}
+
+.email{
+    font-size: small;
+}
+
+.user-edit-btns{
+    /* display: none; */
+}
+
+.delete-btn:hover{
+    background-color: #F02D3A;
+}
