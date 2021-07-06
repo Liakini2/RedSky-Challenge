@@ -47,8 +47,8 @@ export const updateUser = (req: express.Request<CreatedUser>, res: express.Respo
         last_name: last_name || userList[index].last_name,
         avatar: avatar || userList[index].avatar,
         email: email || userList[index].email
-    }
-    console.log(userList)
+    };
+    console.log(userList);
     return res.status(200).send(userList);
 };
 

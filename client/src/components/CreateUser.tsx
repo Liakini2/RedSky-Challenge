@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './CreateUser.css'
+import './CreateUser.css';
 
 const CreateUser = ({ sendNewUser }: any) => {
     const [first_name, setFirstName] = useState<string>('');

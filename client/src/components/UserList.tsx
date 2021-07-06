@@ -7,14 +7,6 @@ import { ToastContainer, toast, Bounce } from 'react-toastify';
 import './UserList.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-// interface UserListProps {
-//     users: CreatedUser[];
-// }
-
-// const UserList: React.FC<UserListProps> = (props) => {
-
-
-
 const UserList = () => {
     const [users, setUsers] = useState<CreatedUser[]>([]);
 

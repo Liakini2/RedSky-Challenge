@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './EditUser.css'
+import './EditUser.css';
 
 const EditUser = (props: any) => {
     const [first_name, setFirstName] = useState<string>('');
