@@ -31,7 +31,6 @@ export const createUser = (req: express.Request<CreatedUser>, res: express.Respo
         id: ++userId, first_name, last_name, avatar, email
     };
     userList.push(newUser);
-    console.log(userList);
     return res.status(201).send(userList);
 };
 
@@ -48,7 +47,6 @@ export const updateUser = (req: express.Request<CreatedUser>, res: express.Respo
         avatar: avatar || userList[index].avatar,
         email: email || userList[index].email
     };
-    console.log(userList);
     return res.status(200).send(userList);
 };
 

@@ -14,7 +14,6 @@ const UserList = () => {
         async function getUsers() {
             const response = await axios.get('/api/users');
             setUsers(response.data.data);
-            toast('test');
         };
         getUsers();
     }, [setUsers]);
@@ -51,10 +50,9 @@ const UserList = () => {
                 {users.map((user) => {
                     return <div key={user.id} className='user-list-display'>
                         <h1>{user.first_name} {user.last_name}</h1>
-                        <img src={user.avatar} alt={'user avatar'} />
+                        <img src={user.avatar} alt={`${user.first_name} ${user.last_name}`} />
                         <h1 className='email'>{user.email}</h1>
                         <div className='user-edit-btns'>
-                            {/* {console.log(user.id)} */}
                             <EditUser updateUser={updateUser} userId={user.id} />
                             <button className='delete-btn' onClick={() => deleteUser(user.id)}>DELETE</button>
                         </div>
